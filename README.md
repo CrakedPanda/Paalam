@@ -83,16 +83,60 @@ Actual pin assignments, wiring, and exact module models depend on the firmware v
 - **Web technologies:** Browser-based teacher interface.
 - **Text-to-speech:** Spoken rendering of supported text messages using the laptop's audio output.
 
+## Repository layout
+
+- `Braillie_keyboard/braille_keyborad/braille_keyborad.ino`: ESP32 Braille keyboard, TFT display, Bluetooth and INMP441 microphone firmware.
+- `Braillie_keyboard/libraries/`: bundled Arduino libraries and their upstream licenses. Keep the TFT_eSPI configuration aligned with your display and wiring.
+- `speech/paalam_speech_server.py`: Windows Bluetooth serial bridge with text-to-speech and local Whisper speech recognition.
+- `HandSigns/`: standalone experimental Indian Sign Language word recognizer, browser interface, fitted model, reference clips and tests. See [HandSigns setup and limitations](HandSigns/README.md), [model card](HandSigns/MODEL-CARD.md) and [test report](HandSigns/ISL-TEST-REPORT.md).
+
+The HandSigns browser app runs independently of the ESP32 speech bridge. A unified teacher interface and dedicated doubt-request integration remain project goals.
+
 ## 🚀 Running the prototype
 
-> This is a hardware-plus-software project. The exact filenames and dependencies may differ between prototype revisions; use the source files included with your version.
+### HandSigns browser app
 
-1. **Prepare the ESP32.** Connect it by USB, open the student-module firmware in your ESP32-compatible development environment, select the correct board and serial port, and upload it.
-2. **Pair the device.** In Windows Bluetooth settings, pair the ESP32 device and identify the outgoing Bluetooth serial **COM port** in Device Manager.
-3. **Configure the Python bridge.** Set the Bluetooth COM port in the Python application to match the port Windows assigned (for example, `COM11` is only an example, not a fixed port).
-4. **Install Python dependencies.** Use the project's dependency file if one is included; otherwise install the libraries imported by the Python application.
-5. **Start the PC application.** Run the Python bridge, then launch the teacher interface using the instructions provided with its source code.
-6. **Test communication.** Send a simple message and confirm that it is received on the other side before testing Braille input, doubt notifications, or speech features.
+Install Node.js 20 or newer. From the repository root:
+
+```powershell
+cd HandSigns
+node server.mjs
+```
+
+Open http://127.0.0.1:5173 in Chrome or Edge and allow camera access when you start the camera. On Windows, you can also double-click `HandSigns/Start HandSigns.cmd`. Runtime model and vendor assets are included; no Python setup is needed for normal HandSigns use. If MediaPipe assets are missing, run `node setup.mjs` from `HandSigns` with internet access. Optional model preparation has separate instructions in [training/README.md](HandSigns/training/README.md).
+
+Run the existing recognition and composition tests from `HandSigns`:
+
+```powershell
+node --test tests/isl.test.mjs
+```
+
+### ESP32 firmware and Windows speech bridge
+
+1. Install Arduino IDE with Espressif's ESP32 board support. Use an ESP32 board that supports Bluetooth Classic SPP; the firmware also uses `ESP_I2S.h`. Select a compatible board/core version and verify the sketch compiles for your hardware.
+2. Open `Braillie_keyboard/braille_keyborad/braille_keyborad.ino`. Make the bundled libraries available to Arduino and review `TFT_eSPI` display configuration and all sketch pin assignments before connecting or uploading to hardware.
+3. Pair the Bluetooth device named `PAALAM_ESP32` in Windows and identify its outgoing serial COM port.
+4. Install Python and create a local virtual environment from the repository root:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install pyserial numpy pyttsx3 faster-whisper
+```
+
+5. Change `PORT` in `speech/paalam_speech_server.py` to the assigned COM port (the current `COM12` is machine-specific). The script uses Windows SAPI5 speech output and the CPU `tiny.en` Whisper model; the first run may download model files.
+6. Run the bridge:
+
+```powershell
+.\.venv\Scripts\python.exe speech\paalam_speech_server.py
+```
+
+Keep other serial monitors closed on the same port. Test text transfer before microphone capture. Hardware behavior requires physical validation; the automated HandSigns tests do not validate the ESP32 or Bluetooth connection.
+
+### Source data, privacy and repository hygiene
+
+HandSigns includes third-party runtime assets and reference recordings needed for the app to work. Preserve their attribution and licenses; the source datasets have research/academic and other usage restrictions documented in the [HandSigns README](HandSigns/README.md). This repository does not grant new rights to those materials.
+
+Local environments, logs, caches, downloaded training data and prototype backups are excluded from new commits. Keep API keys, tokens, Wi-Fi credentials, private keys and personal recordings out of source files and Git history. Use local environment configuration when adding services that require secrets.
 
 ### Basic Bluetooth troubleshooting
 
