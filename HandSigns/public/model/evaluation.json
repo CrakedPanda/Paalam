@@ -1,0 +1,490 @@
+{
+  "sourceFiles": 137,
+  "training": 89,
+  "validation": {
+    "total": 18,
+    "top1Correct": 17,
+    "accepted": 16,
+    "acceptedCorrect": 16,
+    "rejected": 2,
+    "rows": [
+      {
+        "file": "fine-User011.mp4",
+        "signer": "User011",
+        "expected": "fine",
+        "predicted": null,
+        "top": "fine",
+        "distance": 0.4511807186507936,
+        "margin": 0.012517019801709717,
+        "correct": false
+      },
+      {
+        "file": "fine-User012.mp4",
+        "signer": "User012",
+        "expected": "fine",
+        "predicted": "fine",
+        "top": "fine",
+        "distance": 0.363944105357143,
+        "margin": 0.27818236453819245,
+        "correct": true
+      },
+      {
+        "file": "goodmorning-User011.mp4",
+        "signer": "User011",
+        "expected": "goodmorning",
+        "predicted": "goodmorning",
+        "top": "goodmorning",
+        "distance": 0.1518255132936508,
+        "margin": 0.6847918879994102,
+        "correct": true
+      },
+      {
+        "file": "goodmorning-User012.mp4",
+        "signer": "User012",
+        "expected": "goodmorning",
+        "predicted": "goodmorning",
+        "top": "goodmorning",
+        "distance": 0.23530060208333334,
+        "margin": 0.4311053783862452,
+        "correct": true
+      },
+      {
+        "file": "hello-User011.mp4",
+        "signer": "User011",
+        "expected": "hello",
+        "predicted": "hello",
+        "top": "hello",
+        "distance": 0.03586979801587302,
+        "margin": 0.9104074758759675,
+        "correct": true
+      },
+      {
+        "file": "hello-User012.mp4",
+        "signer": "User012",
+        "expected": "hello",
+        "predicted": "hello",
+        "top": "hello",
+        "distance": 0.2859997749999999,
+        "margin": 0.4378978678348189,
+        "correct": true
+      },
+      {
+        "file": "i-User011.mp4",
+        "signer": "User011",
+        "expected": "i",
+        "predicted": "i",
+        "top": "i",
+        "distance": 0.07454617470238092,
+        "margin": 0.8687441661964684,
+        "correct": true
+      },
+      {
+        "file": "i-User012.mp4",
+        "signer": "User012",
+        "expected": "i",
+        "predicted": "i",
+        "top": "i",
+        "distance": 0.3215012339285714,
+        "margin": 0.2121066226347429,
+        "correct": true
+      },
+      {
+        "file": "student-User011.mp4",
+        "signer": "User011",
+        "expected": "student",
+        "predicted": "student",
+        "top": "student",
+        "distance": 0.8706679104166666,
+        "margin": 0.12603375858895727,
+        "correct": true
+      },
+      {
+        "file": "student-User012.mp4",
+        "signer": "User012",
+        "expected": "student",
+        "predicted": "student",
+        "top": "student",
+        "distance": 0.18629081924603175,
+        "margin": 0.39547585836223054,
+        "correct": true
+      },
+      {
+        "file": "teacher-User011.mp4",
+        "signer": "User011",
+        "expected": "teacher",
+        "predicted": null,
+        "top": "fine",
+        "distance": 0.43949943779761913,
+        "margin": 0.043041445789839594,
+        "correct": false
+      },
+      {
+        "file": "teacher-User012.mp4",
+        "signer": "User012",
+        "expected": "teacher",
+        "predicted": "teacher",
+        "top": "teacher",
+        "distance": 0.5245847376984127,
+        "margin": 0.3097691084474409,
+        "correct": true
+      },
+      {
+        "file": "thankyou-User011.mp4",
+        "signer": "User011",
+        "expected": "thankyou",
+        "predicted": "thankyou",
+        "top": "thankyou",
+        "distance": 0.09626330654761905,
+        "margin": 0.7237256347136862,
+        "correct": true
+      },
+      {
+        "file": "thankyou-User012.mp4",
+        "signer": "User012",
+        "expected": "thankyou",
+        "predicted": "thankyou",
+        "top": "thankyou",
+        "distance": 0.44123865218253977,
+        "margin": 0.2846390531152141,
+        "correct": true
+      },
+      {
+        "file": "what-User011.mp4",
+        "signer": "User011",
+        "expected": "what",
+        "predicted": "what",
+        "top": "what",
+        "distance": 0.319584641468254,
+        "margin": 0.21070684073050705,
+        "correct": true
+      },
+      {
+        "file": "what-User012.mp4",
+        "signer": "User012",
+        "expected": "what",
+        "predicted": "what",
+        "top": "what",
+        "distance": 0.4373804985119049,
+        "margin": 0.13924230007539462,
+        "correct": true
+      },
+      {
+        "file": "you-User011.mp4",
+        "signer": "User011",
+        "expected": "you",
+        "predicted": "you",
+        "top": "you",
+        "distance": 0.33969244841269847,
+        "margin": 0.4917394469414661,
+        "correct": true
+      },
+      {
+        "file": "you-User012.mp4",
+        "signer": "User012",
+        "expected": "you",
+        "predicted": "you",
+        "top": "you",
+        "distance": 0.27568583194444446,
+        "margin": 0.3259822188777777,
+        "correct": true
+      }
+    ]
+  },
+  "test": {
+    "total": 27,
+    "top1Correct": 22,
+    "accepted": 21,
+    "acceptedCorrect": 20,
+    "rejected": 6,
+    "rows": [
+      {
+        "file": "fine-User013.mp4",
+        "signer": "User013",
+        "expected": "fine",
+        "predicted": "fine",
+        "top": "fine",
+        "distance": 0.2753821626984127,
+        "margin": 0.42888385373181637,
+        "correct": true
+      },
+      {
+        "file": "fine-User014.mp4",
+        "signer": "User014",
+        "expected": "fine",
+        "predicted": null,
+        "top": "teacher",
+        "distance": 0.34029935357142854,
+        "margin": 0.028045609763504342,
+        "correct": false
+      },
+      {
+        "file": "fine-User015.mp4",
+        "signer": "User015",
+        "expected": "fine",
+        "predicted": "fine",
+        "top": "fine",
+        "distance": 0.2966881643849206,
+        "margin": 0.2509311427331906,
+        "correct": true
+      },
+      {
+        "file": "goodmorning-User013.mp4",
+        "signer": "User013",
+        "expected": "goodmorning",
+        "predicted": null,
+        "top": "goodmorning",
+        "distance": 0.3929347145833333,
+        "margin": 0.4147663795583584,
+        "correct": false
+      },
+      {
+        "file": "goodmorning-User014.mp4",
+        "signer": "User014",
+        "expected": "goodmorning",
+        "predicted": null,
+        "top": "you",
+        "distance": 0.3526579690476191,
+        "margin": 0.05706874103078752,
+        "correct": false
+      },
+      {
+        "file": "goodmorning-User015.mp4",
+        "signer": "User015",
+        "expected": "goodmorning",
+        "predicted": "you",
+        "top": "you",
+        "distance": 0.3875907455357142,
+        "margin": 0.2703429510017523,
+        "correct": false
+      },
+      {
+        "file": "hello-User013.mp4",
+        "signer": "User013",
+        "expected": "hello",
+        "predicted": "hello",
+        "top": "hello",
+        "distance": 0.18238411607142865,
+        "margin": 0.6480748703989034,
+        "correct": true
+      },
+      {
+        "file": "hello-User014.mp4",
+        "signer": "User014",
+        "expected": "hello",
+        "predicted": "hello",
+        "top": "hello",
+        "distance": 0.07743111865079368,
+        "margin": 0.8236941038859737,
+        "correct": true
+      },
+      {
+        "file": "hello-User015.mp4",
+        "signer": "User015",
+        "expected": "hello",
+        "predicted": "hello",
+        "top": "hello",
+        "distance": 0.09730883125000002,
+        "margin": 0.5664827183548287,
+        "correct": true
+      },
+      {
+        "file": "i-User013.mp4",
+        "signer": "User013",
+        "expected": "i",
+        "predicted": "i",
+        "top": "i",
+        "distance": 0.23874912311507931,
+        "margin": 0.35399086170896166,
+        "correct": true
+      },
+      {
+        "file": "i-User014.mp4",
+        "signer": "User014",
+        "expected": "i",
+        "predicted": "i",
+        "top": "i",
+        "distance": 0.11846714226190475,
+        "margin": 0.8304409368246485,
+        "correct": true
+      },
+      {
+        "file": "i-User015.mp4",
+        "signer": "User015",
+        "expected": "i",
+        "predicted": "i",
+        "top": "i",
+        "distance": 0.1385333349206349,
+        "margin": 0.7410679535810649,
+        "correct": true
+      },
+      {
+        "file": "student-User013.mp4",
+        "signer": "User013",
+        "expected": "student",
+        "predicted": "student",
+        "top": "student",
+        "distance": 0.49318497857142857,
+        "margin": 0.21116163208421834,
+        "correct": true
+      },
+      {
+        "file": "student-User014.mp4",
+        "signer": "User014",
+        "expected": "student",
+        "predicted": "student",
+        "top": "student",
+        "distance": 0.21659576537698408,
+        "margin": 0.49129854305585385,
+        "correct": true
+      },
+      {
+        "file": "student-User015.mp4",
+        "signer": "User015",
+        "expected": "student",
+        "predicted": "student",
+        "top": "student",
+        "distance": 0.2558463020833333,
+        "margin": 0.4120985333423055,
+        "correct": true
+      },
+      {
+        "file": "teacher-User013.mp4",
+        "signer": "User013",
+        "expected": "teacher",
+        "predicted": "teacher",
+        "top": "teacher",
+        "distance": 0.4412496256944444,
+        "margin": 0.4269083060859997,
+        "correct": true
+      },
+      {
+        "file": "teacher-User014.mp4",
+        "signer": "User014",
+        "expected": "teacher",
+        "predicted": null,
+        "top": "teacher",
+        "distance": 0.8448560824404764,
+        "margin": 0.18428365933425017,
+        "correct": false
+      },
+      {
+        "file": "teacher-User015.mp4",
+        "signer": "User015",
+        "expected": "teacher",
+        "predicted": "teacher",
+        "top": "teacher",
+        "distance": 0.5459678694444443,
+        "margin": 0.29360222256543866,
+        "correct": true
+      },
+      {
+        "file": "thankyou-User013.mp4",
+        "signer": "User013",
+        "expected": "thankyou",
+        "predicted": null,
+        "top": "fine",
+        "distance": 0.8363073659722223,
+        "margin": 0.12232565757411429,
+        "correct": false
+      },
+      {
+        "file": "thankyou-User014.mp4",
+        "signer": "User014",
+        "expected": "thankyou",
+        "predicted": "thankyou",
+        "top": "thankyou",
+        "distance": 0.05718136220238095,
+        "margin": 0.7422911268287113,
+        "correct": true
+      },
+      {
+        "file": "thankyou-User015.mp4",
+        "signer": "User015",
+        "expected": "thankyou",
+        "predicted": "thankyou",
+        "top": "thankyou",
+        "distance": 0.05595984136904763,
+        "margin": 0.8499365815978408,
+        "correct": true
+      },
+      {
+        "file": "what-User013.mp4",
+        "signer": "User013",
+        "expected": "what",
+        "predicted": null,
+        "top": "you",
+        "distance": 0.7760758190476191,
+        "margin": 0.01924813156495686,
+        "correct": false
+      },
+      {
+        "file": "what-User014.mp4",
+        "signer": "User014",
+        "expected": "what",
+        "predicted": "what",
+        "top": "what",
+        "distance": 0.318569035813492,
+        "margin": 0.10619616772733098,
+        "correct": true
+      },
+      {
+        "file": "what-User015.mp4",
+        "signer": "User015",
+        "expected": "what",
+        "predicted": "what",
+        "top": "what",
+        "distance": 0.49879799375000006,
+        "margin": 0.40727655794979445,
+        "correct": true
+      },
+      {
+        "file": "you-User013.mp4",
+        "signer": "User013",
+        "expected": "you",
+        "predicted": "you",
+        "top": "you",
+        "distance": 0.16430366438492064,
+        "margin": 0.6173529155955864,
+        "correct": true
+      },
+      {
+        "file": "you-User014.mp4",
+        "signer": "User014",
+        "expected": "you",
+        "predicted": "you",
+        "top": "you",
+        "distance": 0.11865698878968252,
+        "margin": 0.6788120834508574,
+        "correct": true
+      },
+      {
+        "file": "you-User015.mp4",
+        "signer": "User015",
+        "expected": "you",
+        "predicted": "you",
+        "top": "you",
+        "distance": 0.3258966821428572,
+        "margin": 0.16672520719071104,
+        "correct": true
+      }
+    ]
+  },
+  "excluded": [
+    {
+      "file": "i-User010.mp4",
+      "label": "i",
+      "reason": "Insufficient usable hand/body frames"
+    },
+    {
+      "file": "student-User007.mp4",
+      "label": "student",
+      "reason": "Insufficient usable hand/body frames"
+    },
+    {
+      "file": "what-User007.mp4",
+      "label": "what",
+      "reason": "Insufficient usable hand/body frames"
+    }
+  ],
+  "note": "Signer-disjoint within ISL-DATA (train User001–010, validation User011–012, test User013–015). NAME has two dictionary variants and no independent signer test. This is isolated-clip evaluation, not live-camera or sentence accuracy."
+}

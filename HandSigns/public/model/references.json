@@ -1,0 +1,72 @@
+{
+  "hello": {
+    "video": "./references/hello.mp4",
+    "poster": "./references/hello.jpg",
+    "file": "hello-User002.mp4",
+    "credit": "ISL500 / ISL-DATA \u00b7 User002 \u00b7 research and academic use only.",
+    "source": "https://huggingface.co/datasets/ISL500/ISL-DATA"
+  },
+  "goodmorning": {
+    "video": "./references/goodmorning.mp4",
+    "poster": "./references/goodmorning.jpg",
+    "file": "goodmorning-User002.mp4",
+    "credit": "ISL500 / ISL-DATA \u00b7 User002 \u00b7 research and academic use only.",
+    "source": "https://huggingface.co/datasets/ISL500/ISL-DATA"
+  },
+  "i": {
+    "video": "./references/i.mp4",
+    "poster": "./references/i.jpg",
+    "file": "i-User002.mp4",
+    "credit": "ISL500 / ISL-DATA \u00b7 User002 \u00b7 research and academic use only.",
+    "source": "https://huggingface.co/datasets/ISL500/ISL-DATA"
+  },
+  "you": {
+    "video": "./references/you.mp4",
+    "poster": "./references/you.jpg",
+    "file": "you-User002.mp4",
+    "credit": "ISL500 / ISL-DATA \u00b7 User002 \u00b7 research and academic use only.",
+    "source": "https://huggingface.co/datasets/ISL500/ISL-DATA"
+  },
+  "name": {
+    "video": "./references/name.mp4",
+    "poster": "./references/name.jpg",
+    "file": "name-dictionary-1.mp4",
+    "credit": "Indian Sign Language Research and Training Centre (ISLRTC), DEPwD, Ministry of Social Justice and Empowerment, Government of India. Dictionary re-encode; non-profiteering use with acknowledgement.",
+    "source": "https://huggingface.co/datasets/Vignesh3816/Indian_Sign_Language_Data.gov_Rencoded/resolve/main/N/Name.mp4"
+  },
+  "what": {
+    "video": "./references/what.mp4",
+    "poster": "./references/what.jpg",
+    "file": "what-User002.mp4",
+    "credit": "ISL500 / ISL-DATA \u00b7 User002 \u00b7 research and academic use only.",
+    "source": "https://huggingface.co/datasets/ISL500/ISL-DATA"
+  },
+  "fine": {
+    "video": "./references/fine.mp4",
+    "poster": "./references/fine.jpg",
+    "file": "fine-User002.mp4",
+    "credit": "ISL500 / ISL-DATA \u00b7 User002 \u00b7 research and academic use only.",
+    "source": "https://huggingface.co/datasets/ISL500/ISL-DATA"
+  },
+  "student": {
+    "video": "./references/student.mp4",
+    "poster": "./references/student.jpg",
+    "file": "student-User002.mp4",
+    "credit": "ISL500 / ISL-DATA \u00b7 User002 \u00b7 research and academic use only.",
+    "source": "https://huggingface.co/datasets/ISL500/ISL-DATA"
+  },
+  "teacher": {
+    "video": "./references/teacher.mp4",
+    "poster": "./references/teacher.jpg",
+    "file": "teacher-User002.mp4",
+    "credit": "ISL500 / ISL-DATA \u00b7 User002 \u00b7 research and academic use only.",
+    "source": "https://huggingface.co/datasets/ISL500/ISL-DATA"
+  },
+  "thankyou": {
+    "video": "./references/thankyou.mp4",
+    "poster": "./references/thankyou.jpg",
+    "file": "thankyou-User002.mp4",
+    "credit": "ISL500 / ISL-DATA \u00b7 User002 \u00b7 research and academic use only.",
+    "source": "https://huggingface.co/datasets/ISL500/ISL-DATA"
+  }
+}

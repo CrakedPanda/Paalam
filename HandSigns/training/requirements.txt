@@ -1,0 +1,7 @@
+mediapipe==0.10.32
+opencv-python>=4.10
+imageio-ffmpeg==0.6.0
+matplotlib
+absl-py
+flatbuffers
+sounddevice
